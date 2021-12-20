@@ -1,0 +1,38 @@
+.timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5em;
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 5em;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba($color: #000000, $alpha: 0.35);
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
